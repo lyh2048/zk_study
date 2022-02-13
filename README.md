@@ -39,3 +39,31 @@
 
 `Curator`是一个专门解决分布式锁的框架，解决了原生`Java API`开发分布式遇到的问题
 
+## case4：Curator框架基本操作
+
+> Curator是Netflix公司开源的一个Zookeeper客户端，与Zookeeper提供的原生客户端相比，Curator的抽象层次更高，简化了Zookeeper客户端的开发量。
+
+```xml
+<dependency>
+    <groupId>org.apache.curator</groupId>
+    <artifactId>curator-framework</artifactId>
+    <version>4.3.0</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.curator</groupId>
+    <artifactId>curator-recipes</artifactId>
+    <version>4.3.0</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.curator</groupId>
+    <artifactId>curator-client</artifactId>
+    <version>4.3.0</version>
+</dependency>
+```
+
+Curator包含了几个包：
+
+- curator-framework：对zookeeper的底层api的一些封装
+- curator-client：提供了一些客户端的操作，例如重试策略等
+- curator-recipes：封装了一些高级特性，如Cache事件监听、选举、分布式锁、分布式计数器、分布式Barrier等
+
